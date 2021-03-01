@@ -19,9 +19,9 @@ var anziani = intero - (intero * 40 / 100)
 console.log(anziani);
 
 if ((eta >= 18) && (eta <= 65)) {
-  console.log(intero);
+  document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + intero + '€';
 } else if (eta < 18) {
-  console.log(ridotto);
+  document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + ridotto + '€';
 } else {
-  console.log(anziani);
+  document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + anziani + '€';
 }
